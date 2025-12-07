@@ -1,0 +1,165 @@
+/* Contenedor general */
+.carrito-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Caja del carrito */
+.carrito-container {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.carrito-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Lista */
+.carrito-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Tarjeta del item */
+.carrito-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f8f8;
+  border-radius: 14px;
+  align-items: center;
+}
+
+/* Imagen */
+.carrito-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Info */
+.carrito-info {
+  flex: 1;
+}
+
+.carrito-nombre {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.carrito-precio {
+  font-size: 15px;
+  color: #ff7b00;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+/* Controles */
+.carrito-controles {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 8px;
+}
+
+.btn-control {
+  background: #ff7b00;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-control:hover {
+  background: #ff5500;
+}
+
+/* Botón eliminar */
+.carrito-eliminar {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.cantidad {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Zona final */
+.carrito-bottom {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.carrito-total {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Botón pagar */
+.btn-pagar {
+  width: 100%;
+  padding: 12px;
+  background: #00c46b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.btn-pagar:hover {
+  background: #009e56;
+  transform: scale(1.03);
+}
+
+/* Animaciones */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.45s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease forwards;
+}
+/* 📌 Este contenedor hace que TODO el carrito quede debajo del navbar */
+.carrito-page {
+  margin-top: 90px; /* Ajusta según la altura de tu Navbar */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

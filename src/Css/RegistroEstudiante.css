@@ -1,0 +1,78 @@
+.estudiante-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-regresar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #0284c7;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.estudiante-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.estudiante-form {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.estudiante-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.label-check {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.btn-submit {
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0369a1;
+}
+
+.fade-in {
+  animation: fade-in 0.4s ease-in-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

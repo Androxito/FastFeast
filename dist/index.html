@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Ícono principal -->
+  <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <title>FastFeast</title>
+  <script type="module" crossorigin src="/assets/index-CkjQgvEm.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BMGbYqz_.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Registro del Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(() => console.log("Service Worker registrado"))
+          .catch(err => console.log("Error registrando SW", err));
+      });
+    }
+  </script>
+
+</body>
+
+</html>

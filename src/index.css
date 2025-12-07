@@ -1,0 +1,15 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import "leaflet/dist/leaflet.css";
+
+
+@import "tailwindcss";
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Sora", serif;
+}
+
+
+/*  */

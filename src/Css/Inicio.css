@@ -1,0 +1,207 @@
+.inicio-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 70px; /* 👈 ESTE ES EL ESPACIO BAJO EL NAVBAR */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titulo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+/* Contenedor de la barra */
+.search-container {
+    margin-top: 40px; /* 👈 AÑADIDO */
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    padding: 10px 14px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    transition: 0.25s ease-in-out;
+}
+
+
+/* Focus con sombra azul */
+.search-container:focus-within {
+    border-color: #0284c7;
+    box-shadow: 0 0 6px rgba(2, 132, 199, 0.4);
+}
+
+/* Icono */
+.search-icon {
+    color: #6b7280;
+    margin-right: 10px;
+}
+
+/* Input */
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 26px;
+    }
+
+    .search-container {
+        max-width: 100%;
+        padding: 8px 12px;
+    }
+
+    .search-input {
+        font-size: 15px;
+    }
+}
+/* ----- CATEGORÍAS ----- */
+.categorias-container {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 10px 5px;
+    scroll-behavior: smooth;
+}
+
+/* Quitar barra fea del scroll */
+.categorias-container::-webkit-scrollbar {
+    height: 6px;
+}
+.categorias-container::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+.categorias-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Item */
+.categoria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70px;
+    cursor: pointer;
+}
+
+.categoria-icon {
+    font-size: 35px;
+}
+
+.categoria-text {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .categoria-icon {
+        font-size: 28px;
+    }
+
+    .categoria-text {
+        font-size: 12px;
+    }
+
+    .categoria-item {
+        min-width: 60px;
+    }
+}
+/* ---- PRODUCTOS ---- */
+.productos-container {
+    margin-top: 35px;
+    width: 100%;
+    max-width: 1100px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+
+    padding: 10px;
+}
+
+/* Tarjeta */
+.producto-card {
+    background: white;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.producto-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Imagen */
+.producto-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Info */
+.producto-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: relative;
+}
+
+.producto-precio {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.producto-titulo {
+    font-size: 13px;
+    color: #4b5563;
+}
+
+/* Botón + */
+.producto-add {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    background: white;
+    border: 2px solid #e5e7eb;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+    .productos-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .producto-img {
+        height: 120px;
+    }
+}
+

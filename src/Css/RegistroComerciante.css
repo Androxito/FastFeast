@@ -1,0 +1,85 @@
+.registro-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease;
+}
+
+.registro-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #0ea5e9;
+  margin-bottom: 20px;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.registro-form input,
+.registro-form textarea {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.registro-form input:focus,
+.registro-form textarea:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 6px rgba(14,165,233,0.4);
+}
+
+.btn-submit {
+  padding: 14px;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.25s;
+}
+
+.btn-submit:hover {
+  background: #0284c7;
+  transform: scale(1.03);
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .registro-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+.btn-regresar {
+  background: #e5e7eb;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-regresar:hover {
+  background: #d1d5db;
+}

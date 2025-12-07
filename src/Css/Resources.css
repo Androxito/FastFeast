@@ -1,0 +1,76 @@
+/* Contenedor general, deja espacio debajo del navbar */
+.resources-page {
+  margin-top: 250px; /* Ajusta según tu navbar */
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Caja del formulario */
+.resources-card {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.resources-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+/* Inputs */
+.resources-input,
+.resources-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+/* Layout responsive del formulario */
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Imagen previa */
+.preview-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Botón */
+.resources-btn {
+  width: 100%;
+  background: #16a34a;
+  padding: 14px;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.resources-btn:hover {
+  background: #128738;
+}
