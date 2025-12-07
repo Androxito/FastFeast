@@ -1,6 +1,6 @@
 import React from "react";
 import { useCarrito } from "../context/CarritoContext";
-import "../Css/carrito.css";
+import "../css/carrito.css";
 
 const Carrito = () => {
   const {
