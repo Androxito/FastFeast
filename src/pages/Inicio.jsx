@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Css/Inicio.css";
+import "../css/Inicio.css";
 import { IoSearch } from "react-icons/io5";
 import { useCarrito } from "../context/CarritoContext"; // ✅ Ruta corregida
 

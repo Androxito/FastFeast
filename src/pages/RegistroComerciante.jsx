@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MapaSelector from "../components/MapaSelector";
-import "../Css/RegistroComerciante.css";
+import "../css/RegistroComerciante.css";
 
 const RegistroComerciante = () => {
   const navigate = useNavigate();

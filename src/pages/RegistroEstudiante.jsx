@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IoArrowBack } from "react-icons/io5";
-import "../Css/RegistroEstudiante.css";
+import "../css/RegistroEstudiante.css";
 
 const RegistroEstudiante = () => {
   const navigate = useNavigate();
